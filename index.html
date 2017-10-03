@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html ng-app="mainApp">
+<head>
+	<title></title>
+
+</head>
+<body ng-controller="appController">
+	<div>
+		<h1>Contact list grip oprations</h1>
+		<table style="text-align:left">
+			<thead>
+			<tr>
+				<th width="30%">Name</th>
+				<th width="30%">Email</th>
+				<th width="30%">Phone</th>
+			</tr>
+			<tbody>
+				<tr ng-repeat="temp in personlist">
+					<td width="30%">{{temp.name}}</td>
+					<td width="30%">{{temp.email}}</td>
+					<td width="30%">{{temp.phone}}</td>
+				</tr>
+			</tbody>
+			</thead>
+		</table>
+
+
+	</div>
+
+	
+    
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<script type="text/javascript" src="mycustomerController.js"></script>
+</body>
+</html>
